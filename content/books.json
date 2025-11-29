@@ -1,0 +1,9 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Example Book",
+      "grade": "Grade 1"
+    }
+  ]
+}
