@@ -1,7 +1,16 @@
-  - name: Set up Flutter
+name: Flutter CI - build apk & web
+on:
+push:
+branches: [ feature/flutter-setup, main ]
+workflow_dispatch:
+jobs:
+setup-and-build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4  - name: Set up Flutter
     uses: subosito/flutter-action@v2
     with:
-      # هذا هو الإصدار الذي ثبت أنه يعمل، تم تعديله من 3.10.0
+      # هذا هو الإصدار الذي ثبت أنه يعمل تم تعديله من 3.10.0
       flutter-version: '3.19.6' 
       channel: 'stable'
 
@@ -13,8 +22,8 @@
     working-directory: app
     run: flutter pub get
 
-  # خطوة تصحيح الخطأ "Could not find an option named release"
-  # تم إضافة "--web-renderer html" لحل مشكلة البناء في البيئة التلقائية
+  # خطوة تصحيح الخطأ في بناء الويب
+  # تم إضافة web-renderer html لحل مشكلة البناء في البيئة التلقائية
   - name: Build web
     working-directory: app
     run: flutter build web --web-renderer html --release
