@@ -15,7 +15,8 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "stable"
+          flutter-version: '3.16.8' # تم التعديل لتحديد إصدار ثابت
+          channel: 'stable' # تم التعديل لتحديد قناة الإصدار
 
       - name: Enable web
         run: flutter config --enable-web
