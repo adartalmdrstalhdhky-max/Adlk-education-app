@@ -1,0 +1,24 @@
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub/
+build/
+
+# Generated files
+lib/generated/
+
+# IDE
+.idea/
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Native Build
+android/.gradle/
+android/app/build/
+ios/Pods/
+macos/Flutter/ephemeral/
+linux/flutter/
+windows/flutter/
