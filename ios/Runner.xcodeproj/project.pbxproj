@@ -1,0 +1,14 @@
+/* هذا ملف مشروع Xcode الأساسي، يحتوي على إعدادات البناء لجميع الأهداف. */
+
+{
+  archiveVersion = 1;
+  classes = {
+  };
+  objectVersion = 120;
+  objects = {
+
+/* ملفات الإعدادات الداخلية للمشروع */
+
+  };
+  rootObject = 1234567890ABCDEF12345678 /* Project object */;
+}
