@@ -1,7 +1,7 @@
 class AppConstants {
   // 🎯 معلومات التطبيق الأساسية
   static const String appName = 'Adlik Core';
-  static const String packageName = 'com.adlukk.education';
+  static const String packageName = 'com.Adlik.education';
   
   // 🏷️ معلومات الإصدار
   static const String appVersion = '1.0.0';
