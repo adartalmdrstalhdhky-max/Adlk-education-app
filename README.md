@@ -76,7 +76,7 @@ All contributions will follow a controlled workflow (main → dev → feature).
 ---
 
 ## 📄 License  
-This project is owned by the Adlik Education Initiative.  
+This project is owned by the Adlk Education Initiative.  
 All rights reserved.
 
 ---
