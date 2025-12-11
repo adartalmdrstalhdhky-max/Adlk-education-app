@@ -1,0 +1,21 @@
+//
+// Application-level settings for the Runner target.
+// Updated for Flutter 3.x and Xcode latest versions (2025)
+//
+
+//
+// اسم التطبيق (يظهر للمستخدم)
+//
+PRODUCT_NAME = Adlak
+
+//
+// المعرّف الفريد لحزمة التطبيق (Bundle Identifier)
+// يجب أن يكون بصيغة:
+// com.companyname.appname
+//
+PRODUCT_BUNDLE_IDENTIFIER = com.adlak.education
+
+//
+// حقوق النشر الظاهرة في معلومات التطبيق
+//
+PRODUCT_COPYRIGHT = Copyright © 2025 Adlak Education. All rights reserved.
