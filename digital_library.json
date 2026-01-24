@@ -1,0 +1,26 @@
+{
+  "project": "Adlk Education App",
+  "feature": "Digital Library - No Internet Required",
+  "curriculum": [
+    {
+      "subject": "الرياضيات",
+      "grade": "التاسع",
+      "status": "متاح للتحميل والدراسة أوفلاين",
+      "chapters": ["الجبر", "الهندسة", "الإحصاء"]
+    },
+    {
+      "subject": "العلوم",
+      "grade": "التاسع",
+      "status": "متاح للتحميل والدراسة أوفلاين",
+      "chapters": ["الكيمياء الحيوية", "الفيزياء الحديثة"]
+    },
+    {
+      "subject": "اللغة العربية",
+      "grade": "الثامن",
+      "status": "قيد التحديث الرقمي",
+      "chapters": ["النحو", "الأدب العربي"]
+    }
+  ],
+  "storage_type": "Local Offline Storage"
+}
+
