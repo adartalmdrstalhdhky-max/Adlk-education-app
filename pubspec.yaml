@@ -1,47 +1,51 @@
-name: adlik
-description: A smart offline-first education platform for Yemen and the world.
+name: adlk
+description: Adlk Smart Education Platform
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  
-  cupertino_icons: ^1.0.6
-  
-  # إدارة الحالة
+
+  # State & Core
   provider: ^6.0.5
-  
-  # 💾 قاعدة بيانات محلية OFFLINE
+
+  # Local Database (Encrypted, Offline-first)
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  
-  # لعرض ملفات PDF
-  flutter_pdfview: ^1.3.1
-  path_provider: ^2.1.3
-  
-  # اتصال محلي / استيراد (لخدمات الذكاء الاصطناعي لاحقاً)
-  http: ^1.2.2
-  
-  # تخزين آمن للاحتياجات الأساسية
-  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+
+  # AI & Speech
+  speech_to_text: ^6.6.0
+  flutter_tts: ^3.8.5
+  tflite_flutter: ^0.10.4
+
+  # Charts & Analytics
+  fl_chart: ^0.66.0
+
+  # PDF Certificates
+  pdf: ^3.10.7
+
+  # Notifications (Smart Reminders)
+  flutter_local_notifications: ^17.0.0
+
+  # Cloud Sync (Ready – Offline-first)
+  firebase_core: ^2.25.4
+  cloud_firestore: ^4.15.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
-  hive_generator: ^2.0.1
-  build_runner: ^2.4.8
+
+  flutter_lints: ^3.0.1
 
 flutter:
-  # يجب أن يكون هذا السطر هو الأخير في هذا القسم
   uses-material-design: true
-  
-  # 🎯 تم ربط مجلدات الأصول:
+
   assets:
-    - assets/images/
-    - assets/fonts/
-    - assets/data/
+    - assets/content/
+    - assets/models/
