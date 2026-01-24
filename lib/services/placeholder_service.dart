@@ -1,3 +1,0 @@
-class PlaceholderService {
-  void init() {}
-}
