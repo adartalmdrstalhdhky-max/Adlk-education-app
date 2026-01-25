@@ -11,17 +11,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # State & Core
+  # State Management
   provider: ^6.0.5
 
-  # Local Database (Encrypted, Offline-first)
+  # Local Storage (Encrypted - Offline First)
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   flutter_secure_storage: ^9.0.0
 
-  # AI & Speech
+  # Voice & Speech
   speech_to_text: ^6.6.0
   flutter_tts: ^3.8.5
+
+  # AI / NLP (On-device)
   tflite_flutter: ^0.10.4
 
   # Charts & Analytics
@@ -30,10 +32,10 @@ dependencies:
   # PDF Certificates
   pdf: ^3.10.7
 
-  # Notifications (Smart Reminders)
+  # Notifications
   flutter_local_notifications: ^17.0.0
 
-  # Cloud Sync (Ready – Offline-first)
+  # Cloud Sync (Ready - Offline First)
   firebase_core: ^2.25.4
   cloud_firestore: ^4.15.4
 
@@ -43,9 +45,19 @@ dev_dependencies:
 
   flutter_lints: ^3.0.1
 
+  # App Icons Generator
+  flutter_launcher_icons: ^0.14.4
+
 flutter:
   uses-material-design: true
 
   assets:
     - assets/content/
     - assets/models/
+    - assets/icon/
+
+# App Icon Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
