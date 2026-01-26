@@ -1,0 +1,22 @@
+{
+  "subject": "القراءة",
+  "grade": 1,
+  "exercises": [
+    {
+      "id": "r1_e1",
+      "lesson_id": "r1_l1",
+      "type": "identify_letter",
+      "question": "اختر حرف الألف",
+      "options": ["ا", "ب", "ت"],
+      "correct_answer": "ا"
+    },
+    {
+      "id": "r1_e2",
+      "lesson_id": "r1_l2",
+      "type": "identify_letter",
+      "question": "اختر حرف الباء",
+      "options": ["ا", "ب", "ث"],
+      "correct_answer": "ب"
+    }
+  ]
+}
