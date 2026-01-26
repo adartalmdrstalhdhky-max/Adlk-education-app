@@ -44,3 +44,28 @@
     }
   ]
 }
+,
+    {
+      "id": "r1_m1",
+      "lesson_id": "r1_l1",
+      "type": "match_word",
+      "question": "اختر الكلمة التي تبدأ بحرف الألف",
+      "options": ["أسد", "بيت", "تفاح"],
+      "correct_answer": "أسد"
+    },
+    {
+      "id": "r1_m2",
+      "lesson_id": "r1_l2",
+      "type": "match_word",
+      "question": "اختر الكلمة التي تبدأ بحرف الباء",
+      "options": ["أم", "باب", "تمر"],
+      "correct_answer": "باب"
+    },
+    {
+      "id": "r1_m3",
+      "lesson_id": "r1_l3",
+      "type": "match_word",
+      "question": "اختر الكلمة التي تبدأ بحرف التاء",
+      "options": ["تفاح", "جمل", "ثوب"],
+      "correct_answer": "تفاح"
+    }
