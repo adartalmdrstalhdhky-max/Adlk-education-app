@@ -1,64 +1,82 @@
-import 'package:flutter/material.dart';
-import '../../core/learning/learning_controller.dart';
-import 'exercise_screen.dart';
+@override
+Widget build(BuildContext context) {
+  final bool canAdvance =
+      outcome.nextAction == "advance_next" &&
+      currentIndex + 1 < exercises.length;
 
-class ResultScreen extends StatelessWidget {
-  final LearningOutcome outcome;
-  final List<Map<String, dynamic>> exercises;
-  final int currentIndex;
-
-  const ResultScreen({
-    super.key,
-    required this.outcome,
-    required this.exercises,
-    required this.currentIndex,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final bool canAdvance =
-        outcome.nextAction == "advance_next" &&
-        currentIndex + 1 < exercises.length;
-
-    return Scaffold(
-      appBar: AppBar(title: const Text("النتيجة")),
-      body: Padding(
+  return Scaffold(
+    backgroundColor: Colors.white,
+    body: Center(
+      child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              outcome.isCorrect ? "إجابة صحيحة 🎉" : "إجابة خاطئة ❌",
-              style: const TextStyle(fontSize: 22),
+            Icon(
+              outcome.isCorrect
+                  ? Icons.emoji_events
+                  : Icons.refresh,
+              size: 100,
+              color:
+                  outcome.isCorrect ? Colors.green : Colors.orange,
             ),
-            const SizedBox(height: 10),
-            Text("النقاط: ${outcome.pointsEarned}"),
+            const SizedBox(height: 20),
+            Text(
+              outcome.isCorrect ? "أحسنت 👏" : "حاول مرة أخرى 💪",
+              style: const TextStyle(
+                fontSize: 28,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const SizedBox(height: 15),
+            Text("النقاط: ${outcome.pointsEarned}",
+                style: const TextStyle(fontSize: 18)),
             Text(
               "الإتقان: ${outcome.analytics.accuracy.toStringAsFixed(1)}%",
+              style: const TextStyle(fontSize: 18),
             ),
             if (outcome.badge != null)
-              Text("🏅 ${outcome.badge!.description}"),
-            const Spacer(),
-            ElevatedButton(
-              child: Text(
-                canAdvance ? "التالي ▶" : "إعادة المحاولة 🔁",
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Text(
+                  "🏅 ${outcome.badge!.description}",
+                  style: const TextStyle(fontSize: 18),
+                ),
               ),
-              onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => ExerciseScreen(
-                      exercises: exercises,
-                      currentIndex:
-                          canAdvance ? currentIndex + 1 : currentIndex,
-                    ),
+            const SizedBox(height: 30),
+            SizedBox(
+              width: double.infinity,
+              height: 55,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
                   ),
-                );
-              },
+                ),
+                child: Text(
+                  canAdvance ? "التالي ▶" : "إعادة المحاولة 🔁",
+                  style: const TextStyle(fontSize: 20),
+                ),
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => ExerciseScreen(
+                        exercises: exercises,
+                        currentIndex:
+                            canAdvance
+                                ? currentIndex + 1
+                                : currentIndex,
+                      ),
+                    ),
+                  );
+                },
+              ),
             )
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
 }
