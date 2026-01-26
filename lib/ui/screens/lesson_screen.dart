@@ -20,25 +20,21 @@ class LessonScreen extends StatelessWidget {
 
           final exercises = snapshot.data!;
 
-          return ListView.builder(
-            itemCount: exercises.length,
-            itemBuilder: (context, index) {
-              final exercise = exercises[index];
-
-              return ListTile(
-                title: Text(exercise["question"]),
-                trailing: const Icon(Icons.play_arrow),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) =>
-                          ExerciseScreen(exercise: exercise),
+          return Center(
+            child: ElevatedButton(
+              child: const Text("ابدأ المسار التعليمي"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => ExerciseScreen(
+                      exercises: exercises,
+                      currentIndex: 0,
                     ),
-                  );
-                },
-              );
-            },
+                  ),
+                );
+              },
+            ),
           );
         },
       ),
