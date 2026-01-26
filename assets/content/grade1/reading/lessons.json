@@ -1,0 +1,23 @@
+{
+  "subject": "القراءة",
+  "grade": 1,
+  "language": "ar",
+  "lessons": [
+    {
+      "id": "r1_l1",
+      "title": "حرف الألف",
+      "description": "التعرف على شكل وصوت حرف الألف",
+      "letter": "ا",
+      "examples": ["أسد", "أرنب", "أم"],
+      "difficulty": 1
+    },
+    {
+      "id": "r1_l2",
+      "title": "حرف الباء",
+      "description": "التعرف على شكل وصوت حرف الباء",
+      "letter": "ب",
+      "examples": ["بيت", "بطة", "باب"],
+      "difficulty": 1
+    }
+  ]
+}
