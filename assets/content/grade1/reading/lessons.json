@@ -18,6 +18,30 @@
       "letter": "ب",
       "examples": ["بيت", "بطة", "باب"],
       "difficulty": 1
+    },
+    {
+      "id": "r1_l3",
+      "title": "حرف التاء",
+      "description": "التعرف على شكل وصوت حرف التاء",
+      "letter": "ت",
+      "examples": ["تفاح", "تمر", "توت"],
+      "difficulty": 1
+    },
+    {
+      "id": "r1_l4",
+      "title": "حرف الثاء",
+      "description": "التعرف على شكل وصوت حرف الثاء",
+      "letter": "ث",
+      "examples": ["ثعلب", "ثوب", "ثوم"],
+      "difficulty": 1
+    },
+    {
+      "id": "r1_l5",
+      "title": "حرف الجيم",
+      "description": "التعرف على شكل وصوت حرف الجيم",
+      "letter": "ج",
+      "examples": ["جمل", "جبن", "جدار"],
+      "difficulty": 1
     }
   ]
 }
