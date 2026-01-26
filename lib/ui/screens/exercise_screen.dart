@@ -3,14 +3,20 @@ import '../../core/learning/learning_controller.dart';
 import 'result_screen.dart';
 
 class ExerciseScreen extends StatelessWidget {
-  final Map<String, dynamic> exercise;
+  final List<Map<String, dynamic>> exercises;
+  final int currentIndex;
 
-  ExerciseScreen({super.key, required this.exercise});
+  ExerciseScreen({
+    super.key,
+    required this.exercises,
+    required this.currentIndex,
+  });
 
   final LearningController controller = LearningController();
 
   @override
   Widget build(BuildContext context) {
+    final exercise = exercises[currentIndex];
     final List options = exercise["options"];
 
     return Scaffold(
@@ -36,14 +42,17 @@ class ExerciseScreen extends StatelessWidget {
                       studentAnswer: option,
                       correctAnswer: exercise["correct_answer"],
                       responseTime: 4,
-                      totalLessonsCompleted: 1,
+                      totalLessonsCompleted: currentIndex + 1,
                     );
 
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (_) =>
-                            ResultScreen(outcome: outcome),
+                        builder: (_) => ResultScreen(
+                          outcome: outcome,
+                          exercises: exercises,
+                          currentIndex: currentIndex,
+                        ),
                       ),
                     );
                   },
