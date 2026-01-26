@@ -1,5 +1,5 @@
 name: adlk
-description: Adlk Smart Education Platform
+description: Adlk Educational App
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -11,53 +11,12 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # State Management
-  provider: ^6.0.5
-
-  # Local Storage (Encrypted - Offline First)
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
-  flutter_secure_storage: ^9.0.0
-
-  # Voice & Speech
-  speech_to_text: ^6.6.0
   flutter_tts: ^3.8.5
 
-  # AI / NLP (On-device)
-  tflite_flutter: ^0.10.4
-
-  # Charts & Analytics
-  fl_chart: ^0.66.0
-
-  # PDF Certificates
-  pdf: ^3.10.7
-
-  # Notifications
-  flutter_local_notifications: ^17.0.0
-
-  # Cloud Sync (Ready - Offline First)
-  firebase_core: ^2.25.4
-  cloud_firestore: ^4.15.4
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-  flutter_lints: ^3.0.1
-
-  # App Icons Generator
-  flutter_launcher_icons: 0.13.1
+cupertino_icons: ^1.0.2
 
 flutter:
   uses-material-design: true
 
   assets:
     - assets/content/
-    - assets/models/
-    - assets/icon/
-
-# App Icon Configuration
-flutter_launcher_icons:
-  android: true
-  ios: true
-  image_path: "assets/icon/app_icon.png"
