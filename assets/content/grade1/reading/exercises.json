@@ -17,6 +17,30 @@
       "question": "اختر حرف الباء",
       "options": ["ا", "ب", "ث"],
       "correct_answer": "ب"
+    },
+    {
+      "id": "r1_e3",
+      "lesson_id": "r1_l3",
+      "type": "identify_letter",
+      "question": "اختر حرف التاء",
+      "options": ["ت", "ب", "ج"],
+      "correct_answer": "ت"
+    },
+    {
+      "id": "r1_e4",
+      "lesson_id": "r1_l4",
+      "type": "identify_letter",
+      "question": "اختر حرف الثاء",
+      "options": ["س", "ث", "ت"],
+      "correct_answer": "ث"
+    },
+    {
+      "id": "r1_e5",
+      "lesson_id": "r1_l5",
+      "type": "identify_letter",
+      "question": "اختر حرف الجيم",
+      "options": ["ح", "ج", "خ"],
+      "correct_answer": "ج"
     }
   ]
 }
