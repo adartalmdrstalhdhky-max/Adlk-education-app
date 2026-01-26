@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
-import '../../core/learning/learning_controller.dart';
-import 'result_screen.dart';
+import 'exercise_screen.dart';
 
 class LessonScreen extends StatelessWidget {
   LessonScreen({super.key});
 
-  final LearningController controller = LearningController();
+  final Map<String, dynamic> sampleExercise = {
+    "lesson_id": "r1_l1",
+    "question": "اختر حرف الألف",
+    "options": ["ا", "ب", "ت"],
+    "correct_answer": "ا"
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -13,20 +17,13 @@ class LessonScreen extends StatelessWidget {
       appBar: AppBar(title: const Text("درس القراءة")),
       body: Center(
         child: ElevatedButton(
-          child: const Text("ابدأ تمرين حرف الألف"),
+          child: const Text("ابدأ التمرين"),
           onPressed: () {
-            final outcome = controller.processAnswer(
-              lessonId: "r1_l1",
-              studentAnswer: "ا",
-              correctAnswer: "ا",
-              responseTime: 4,
-              totalLessonsCompleted: 1,
-            );
-
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (_) => ResultScreen(outcome: outcome),
+                builder: (_) =>
+                    ExerciseScreen(exercise: sampleExercise),
               ),
             );
           },
