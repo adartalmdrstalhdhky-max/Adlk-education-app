@@ -34,6 +34,15 @@ class ExerciseScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
+            // صورة توضيحية (إن وجدت)
+            if (exercise.containsKey("image"))
+              Padding(
+                padding: const EdgeInsets.only(bottom: 20),
+                child: Image.asset(
+                  exercise["image"],
+                  height: 150,
+                ),
+              ),
             Text(
               exercise["question"],
               textAlign: TextAlign.center,
