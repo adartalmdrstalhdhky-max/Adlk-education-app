@@ -8,6 +8,7 @@
       "title": "حرف الألف",
       "description": "التعرف على شكل وصوت حرف الألف",
       "letter": "ا",
+      "image": "assets/images/reading/alef.png",
       "examples": ["أسد", "أرنب", "أم"],
       "difficulty": 1
     },
@@ -16,6 +17,7 @@
       "title": "حرف الباء",
       "description": "التعرف على شكل وصوت حرف الباء",
       "letter": "ب",
+      "image": "assets/images/reading/baa.png",
       "examples": ["بيت", "بطة", "باب"],
       "difficulty": 1
     },
@@ -24,6 +26,7 @@
       "title": "حرف التاء",
       "description": "التعرف على شكل وصوت حرف التاء",
       "letter": "ت",
+      "image": "assets/images/reading/taa.png",
       "examples": ["تفاح", "تمر", "توت"],
       "difficulty": 1
     },
@@ -32,6 +35,7 @@
       "title": "حرف الثاء",
       "description": "التعرف على شكل وصوت حرف الثاء",
       "letter": "ث",
+      "image": "assets/images/reading/thaa.png",
       "examples": ["ثعلب", "ثوب", "ثوم"],
       "difficulty": 1
     },
@@ -40,6 +44,7 @@
       "title": "حرف الجيم",
       "description": "التعرف على شكل وصوت حرف الجيم",
       "letter": "ج",
+      "image": "assets/images/reading/jeem.png",
       "examples": ["جمل", "جبن", "جدار"],
       "difficulty": 1
     }
