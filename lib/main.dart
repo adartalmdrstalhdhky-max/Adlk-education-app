@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
-import 'services/local_db/hive_service.dart';
-import 'core/app_router.dart';
+import 'ui/screens/lesson_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // تهيئة التخزين المشفّر
-  await HiveService().init();
-
+void main() {
   runApp(const AdlkApp());
 }
 
@@ -17,14 +11,9 @@ class AdlkApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Adlk',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRouter.initialRoute,
-      onGenerateRoute: AppRouter.generateRoute,
-      theme: ThemeData(
-        useMaterial3: true,
-        fontFamily: 'Roboto',
-      ),
+      title: 'Adlk',
+      home: LessonScreen(),
     );
   }
 }
