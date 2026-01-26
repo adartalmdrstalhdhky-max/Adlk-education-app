@@ -2,6 +2,7 @@
   "subject": "القراءة",
   "grade": 1,
   "exercises": [
+
     {
       "id": "r1_e1",
       "lesson_id": "r1_l1",
@@ -41,10 +42,8 @@
       "question": "اختر حرف الجيم",
       "options": ["ح", "ج", "خ"],
       "correct_answer": "ج"
-    }
-  ]
-}
-,
+    },
+
     {
       "id": "r1_m1",
       "lesson_id": "r1_l1",
@@ -68,4 +67,24 @@
       "question": "اختر الكلمة التي تبدأ بحرف التاء",
       "options": ["تفاح", "جمل", "ثوب"],
       "correct_answer": "تفاح"
+    },
+
+    {
+      "id": "r1_o1",
+      "lesson_id": "r1_l2",
+      "type": "order_letters",
+      "question": "رتّب الحروف لتكوين كلمة",
+      "options": ["ب", "ا", "ب"],
+      "correct_answer": "باب"
+    },
+    {
+      "id": "r1_o2",
+      "lesson_id": "r1_l1",
+      "type": "order_letters",
+      "question": "رتّب الحروف لتكوين كلمة",
+      "options": ["أ", "س", "د"],
+      "correct_answer": "أسد"
     }
+
+  ]
+}
