@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ui/screens/lesson_screen.dart';
 import 'ui/screens/parent_dashboard_screen.dart';
+import 'ui/screens/teacher_dashboard_screen.dart';
 
 void main() {
   runApp(const AdlkApp());
@@ -64,6 +65,28 @@ class HomeSelector extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (_) => ParentDashboardScreen(),
+                    ),
+                  );
+                },
+              ),
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              height: 60,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple,
+                ),
+                child: const Text(
+                  "لوحة المعلّم",
+                  style: TextStyle(fontSize: 22),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => TeacherDashboardScreen(),
                     ),
                   );
                 },
