@@ -1,69 +1,105 @@
-
 # 📁 Adlik Project Structure
 
-This document describes the official folder and file structure of the **Adlik Smart School — Core Repository**.  
-The structure is designed to be clean, scalable, and easy for any developer to continue working on.
+This document describes the **current and planned** folder structure
+of the Adlik Education App repository.
+
+The structure is designed to support long-term scalability
+while clearly reflecting the current state of the project.
 
 ---
 
-## 📂 Root Structure
+## 📂 Repository Root
 
-Adlik-core/ │ ├── docs/ │   ├── ai/ │   ├── sync-engine/ │   ├── curriculum/ │   └── system-design/ │ ├── lib/ │   ├── core/ │   ├── features/ │   ├── services/ │   ├── offline/ │   ├── online/ │   └── main.dart │ ├── assets/ │   ├── fonts/ │   ├── icons/ │   └── images/ │ ├── test/ │ ├── README.md ├── STRUCTURE.md └── ROADMAP.md (coming soon)
+Adlk-education-app/
+│
+├── android/              → Android platform configuration
+├── ios/                  → iOS platform configuration
+├── lib/                  → Flutter application source code
+├── assets/               → Images, icons, fonts, and data files
+├── docs/                 → Project documentation
+├── test/                 → Test files (to be added later)
+│
+├── README.md
+├── ROADMAP.md
+├── STRUCTURE.md
+├── PROJECT_OVERVIEW.md
+├── PRE_RELEASE_CHECKLIST.md
+├── CONTRIBUTING.md
+├── GOVERNANCE.md
+├── CODE_OF_CONDUCT.md
+└── LICENSE
 
 ---
 
-# 📘 Description of Main Folders
+## 📁 `/lib` — Application Source
 
-## 📁 `/docs`
-Contains all project documentation:  
-- AI modules  
-- Sync engine  
-- Data models  
-- Curriculum system  
-- System architecture
+This folder contains the Flutter application code.
 
-This helps new developers understand the system.
+### Current Structure (Early Stage)
 
----
+lib/
+├── main.dart              → Application entry point
+├── core/                  → Shared utilities, themes, constants (planned)
+├── features/              → Feature modules (planned)
+└── services/              → Services layer (planned)
 
-## 📁 `/lib`
-This is the **heart of the application**.
-
-### Inside `/lib/`:
-
-lib/ ├── core/            → Global utilities, themes, configs ├── features/        → School system, books, AI chat, exams, etc. ├── services/        → API, database, storage, authentication ├── offline/         → Hive/SQLite offline engine ├── online/          → Sync engine + online services └── main.dart        → App entry point
+> Note: Most subfolders are planned and will be implemented
+> after the Android build configuration is fixed.
 
 ---
 
 ## 📁 `/assets`
-Contains images, icons, fonts, and future book images if needed.
+
+Contains all non-code resources used by the application.
+
+assets/
+├── images/                → UI images and illustrations
+├── icons/                 → App icons
+├── fonts/                 → Custom fonts
+└── data/                  → JSON or curriculum data (planned)
+
+---
+
+## 📁 `/docs`
+
+Contains all project documentation and technical references.
+
+Current files include:
+- Architecture and planning documents
+- Governance and contribution guidelines
+- Roadmaps and release preparation
+
+Additional technical documents will be added as development progresses.
 
 ---
 
 ## 📁 `/test`
-Unit testing files (not required right now but will be added by your team later).
+
+Reserved for unit and integration tests.
+Not used in the current phase.
 
 ---
 
-# 🔧 Developer Instructions
+## 🔧 Development Guidelines
 
-- All new features must go into `features/`
-- All shared utilities go to `core/`
-- All database logic must be under `offline/`
-- All cloud/sync logic must go under `online/`
-- Documentation must be stored in `/docs`
-
----
-
-# 🎯 Notes for Future Developers
-
-- The project supports **offline-first architecture**  
-- The AI module must not mention ChatGPT anywhere  
-- The structure is designed for long-term scalability  
-- Follow the roadmap in `ROADMAP.md` when building new stages
+- All new features should be implemented as **modular components**
+- Business logic must remain separated from UI
+- Offline-first architecture is mandatory
+- Curriculum and content must be data-driven (JSON / external files)
+- AI modules must remain optional and isolated
 
 ---
 
-# 🟢 Status
-This file is part of the **core documentation package** and will expand as development continues.
+## 🎯 Notes for Contributors
 
+- This is an early-stage project
+- The immediate blocker is Android build configuration
+- Feature development starts after build stability is achieved
+- Follow the roadmap in `ROADMAP.md`
+
+---
+
+## 🟢 Status
+
+This structure reflects the **current repository state**
+and will evolve as the project progresses.
