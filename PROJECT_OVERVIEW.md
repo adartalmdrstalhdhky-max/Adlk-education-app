@@ -1,51 +1,82 @@
-# منصة أدلك التعليمية (Adlk Educational Platform)
+# Adlik Educational Platform — Project Overview
 
-## الرؤية
-أدلك منصة تعليمية ذكية تهدف إلى إنقاذ التعليم الأساسي للأطفال، خصوصًا في البيئات التي تعاني من نقص المعلمين والكتب، عبر تجربة تعليمية ذكية تعمل بدون إنترنت.
+## Vision
 
-## المشكلة
-- نقص شديد في المعلمين
-- ضعف القراءة لدى الأطفال
-- الاعتماد على الحفظ دون فهم
-- غياب أدوات متابعة حقيقية لولي الأمر والمعلّم
+Adlik is an intelligent educational platform designed to support
+children in environments suffering from teacher shortages and lack of resources.
 
-## الحل
-تطبيق تعليمي ذكي:
-- يعمل بدون إنترنت
-- يتكيف مع مستوى الطفل
-- يقيّم الأداء تلقائيًا
-- يدعم التعلم السمعي والبصري
-- يقدم لوحات متابعة لولي الأمر والمعلّم
+The platform focuses on delivering effective basic education
+through an offline-first, adaptive, and data-driven learning experience.
 
-## المكونات الرئيسية
-### الطالب
-- مسار تعلم ذكي
-- تمارين تفاعلية
-- صوت + صورة + تحليل
+---
 
-### ولي الأمر
-- متابعة التقدم
-- اكتشاف نقاط الضعف
-- بدون تعقيد تقني
+## The Problem
 
-### المعلّم
-- رؤية أداء الطلاب
-- تحديد الدروس الصعبة
-- دعم تعليمي مبني على البيانات
+- Severe shortage of qualified teachers
+- Weak reading and comprehension skills among children
+- Over-reliance on memorization instead of understanding
+- Lack of real tools for parents and teachers to track progress
 
-## التقنيات
+---
+
+## The Solution
+
+An intelligent educational application that:
+
+- Works fully offline
+- Adapts to each child’s learning level
+- Evaluates performance automatically
+- Supports audio and visual learning
+- Provides clear progress dashboards for parents and teachers
+
+---
+
+## Core Components
+
+### 👧 Student
+
+- Adaptive learning path
+- Interactive exercises
+- Audio, visual, and performance analysis
+
+### 👨‍👩‍👧 Parent
+
+- Simple progress tracking
+- Early detection of learning weaknesses
+- No technical complexity
+
+### 👨‍🏫 Teacher
+
+- Student performance overview
+- Identification of difficult lessons
+- Data-driven educational support
+
+---
+
+## Technology Stack
+
 - Flutter
-- Offline-first Architecture
-- Adaptive Learning Engine
-- Local Analytics
-- Text-to-Speech
+- Offline-first architecture
+- Modular learning engine
+- Local analytics system
+- Text-to-Speech (planned)
 
-## الحالة الحالية
-✅ نظام تعليمي مكتمل للمرحلة الأولى  
-✅ جاهز للبناء APK  
-⏳ بانتظار قالب Flutter للإخراج النهائي
+---
 
-## الهدف القادم
-- إخراج نسخة APK
-- تجربة ميدانية في المدارس
-- جذب داعمين وشركاء
+## Current Project Status
+
+- Project documentation and governance completed
+- Flutter project structure exists
+- Android build currently blocked due to Gradle / SDK configuration
+- Core educational features are planned but not yet implemented
+
+⚠️ The immediate priority is fixing the Android build setup.
+
+---
+
+## Next Goals
+
+- Fix Android build and generate a debug APK
+- Implement core learning modules
+- Conduct early field testing in selected schools
+- Prepare for partnerships and educational support programs
