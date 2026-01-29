@@ -1,58 +1,27 @@
-# Contributing to Adlk Education App
+# Contributing to Adlik Education App
 
-Thank you for your interest in contributing!  
-We welcome developers, designers, educators, and AI experts.
+Thank you for your interest in contributing to the Adlik project.
+This repository represents an **early-stage educational system** with a clear technical roadmap.
+
+We welcome contributions from developers, designers, educators, and technical reviewers.
+
+---
+
+## 🚧 Current Project State (Important)
+
+The project is currently **blocked at the Android build stage**.
+
+⚠️ The immediate priority is:
+- Fixing Android / Gradle configuration
+- Ensuring the Flutter project builds and runs successfully
+
+Feature development should **not** start before this issue is resolved.
+
+---
 
 ## 🛠 How to Contribute
 
-1. Fork the repository (انسخ المشروع إلى حسابك)
-2. Create a new branch (فرع جديد لتغييراتك):
+1. Fork the repository to your GitHub account
+2. Create a new branch for your changes:
    ```bash
    git checkout -b feature-name
-
-3. Commit your changes (احفظ تغييراتك):
-
-git commit -m "Describe your change"
-
-
-4. Push to your branch (ارفع الفرع):
-
-git push origin feature-name
-
-
-5. Open a Pull Request (اطلب دمج التغييرات مع المشروع الرئيسي)
-
-
-
-📂 Project Structure
-
-/lib → كود التطبيق
-
-/assets → أيقونات وصور وخطوط
-
-/docs → ملفات الوثائق
-
-
-✔ Pull Request Rules
-
-اكتب الكود نظيف وواضح
-
-اتبع معايير Flutter
-
-لا تكسر أي جزء من التطبيق عند التعديل
-
-ضع عنوان واضح للطلب
-
-
-🧪 Code Quality
-
-اختبر عملك قبل الإرسال
-
-لا تترك أكواد أو ملفات غير مستخدمة
-
-فصل واجهة المستخدم عن المنطق
-
-
-💬 Need Help?
-
-افتح Issue على GitHub إذا احتجت مساعدة
