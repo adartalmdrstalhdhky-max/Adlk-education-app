@@ -1,5 +1,5 @@
 name: adlk
-description: Adlk Educational App
+description: Adlk Educational Platform — Offline-first learning system
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -11,12 +11,25 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # State management
+  provider: ^6.1.2
+
+  # Text to Speech (planned / optional)
   flutter_tts: ^3.8.5
 
-cupertino_icons: ^1.0.2
+  # iOS style icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
 
   assets:
-    - assets/content/
+    - assets/data/
+    - assets/images/
+    - assets/icons/
