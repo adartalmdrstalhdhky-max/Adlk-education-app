@@ -1,6 +1,6 @@
-# 📘 Adlik Smart School System
+# 📘 Adlk Smart School System
 
-Adlik is an **offline-first educational platform** designed to support schools and students in low-connectivity environments, starting with Yemen and scalable globally.
+Adlk is an **offline-first educational platform** designed to support schools and students in low-connectivity environments, starting with Yemen and scalable globally.
 
 This repository represents the **early technical foundation** of the Adlik system.
 
@@ -93,7 +93,7 @@ Please see [`ROADMAP.md`](./ROADMAP.md) for the detailed stage-by-stage plan.
 
 ## 📄 License
 
-This project is part of the **Adlik Educational Initiative**.  
+This project is part of the **Adlk Educational Initiative**.  
 All rights reserved.
 
 ---
