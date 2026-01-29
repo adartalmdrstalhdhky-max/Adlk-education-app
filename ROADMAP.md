@@ -1,4 +1,4 @@
-# 📅 Adlik Core — Development Roadmap
+# 📅 Adlk Core — Development Roadmap
 
 This document defines the **step-by-step technical roadmap** for the Adlik Smart School System.
 It reflects the **current real implementation status** of the GitHub repository.
