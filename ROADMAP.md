@@ -1,46 +1,63 @@
-# 📅 Adlik Core — Development Roadmap
-
-This document outlines the complete roadmap for the **Adlik Smart School System**.  
-It shows all stages from the current MVP to the final full-featured release.
-
----
-
-## 🔹 Stage Overview
-
-| Stage | Description | Status |
-|-------|-------------|--------|
-| Stage 1 | Repository structure & documentation setup | ✔ Done |
-| Stage 2 | Flutter skeleton project | ⏳ Pending |
-| Stage 3 | Offline Database system (Hive/SQLite) | ⏳ Pending |
-| Stage 4 | School Management System (Admin, Teachers, Students) | ⏳ Pending |
-| Stage 5 | Curriculum integration (Grades 1-12, Excel-based) | ⏳ Pending |
-| Stage 6 | AI Assistant Module (Offline & Online) | ⏳ Pending |
-| Stage 7 | Exams & Certificates System | ⏳ Pending |
-| Stage 8 | Reporting & Analytics for Schools | ⏳ Pending |
-| Stage 9 | Build MVP APK for Schools | ⏳ Pending |
-| Stage 10 | QA Testing & Bug Fixes | ⏳ Pending |
-| Stage 11 | Launch Pilot in Selected Schools | ⏳ Pending |
-| Stage 12 | Official Launch & Funding | ⏳ Pending |
-
----
-
-## 🔹 Development Guidelines
-
-1. **Follow Structure:** Always use `STRUCTURE.md` as reference.  
-2. **Feature Branches:** Each stage should have its own branch.  
-3. **Offline-First:** All features must work offline first.  
-4. **Modular Code:** Ensure each feature can be updated independently.  
-5. **AI Module:** Must remain self-contained and no direct mention of ChatGPT.  
-
----
-
-## 🔹 Notes
-
-- The roadmap is dynamic and will be updated as the project evolves.  
-- After MVP completion, official collaborators and funding stages will be added.  
-- Developers joining later will use this roadmap to know exactly what to implement next.
-
----
-
-## 🟢 Status
-This file is ready and part of the **core documentation** of Adlik.
+📅 Adlik Core — Development Roadmap
+This document tracks the actual technical progress of the Adlik Smart School System.
+It reflects what is implemented, partially implemented, and planned, based on the current GitHub repository.
+🔹 Project Stages
+Stage
+Description
+Status
+Stage 1
+Repository structure & core documentation (README, ROADMAP, STRUCTURE)
+✔ Done
+Stage 2
+Flutter project skeleton (multi-platform folders, pubspec, base config)
+🟡 In Progress
+Stage 3
+Android build & Gradle configuration (SDK, AGP, build fix)
+🔴 Blocked
+Stage 4
+Offline-first local database (Hive / SQLite)
+⏳ Planned
+Stage 5
+School system core models (Admin, Teacher, Student)
+⏳ Planned
+Stage 6
+Curriculum engine (JSON / Excel-based import)
+⏳ Planned
+Stage 7
+Exams & certificates generation
+⏳ Planned
+Stage 8
+Analytics & reporting (offline-first)
+⏳ Planned
+Stage 9
+MVP Android APK build
+⏳ Planned
+Stage 10
+QA testing & bug fixing
+⏳ Planned
+Stage 11
+Pilot deployment in selected schools
+⏳ Planned
+Stage 12
+Public launch & partnerships
+⏳ Planned
+🔹 Current Technical Status (Important)
+Flutter project structure exists
+Android build fails due to Gradle / SDK configuration
+No production APK generated yet
+Core logic modules are not implemented yet
+Project is currently blocked at Android build stage
+🔹 Development Principles
+Offline-first architecture (mandatory)
+Clean & modular codebase
+No hard dependency on cloud services
+AI modules must remain optional and isolated
+Curriculum must be data-driven (JSON / Excel), not hardcoded
+🔹 Notes for Contributors
+This repository represents a real early-stage system, not a demo.
+The immediate priority is fixing Android build configuration.
+Once build is stable, feature implementation will proceed stage by stage.
+Contributors can clearly see what is done vs what is planned.
+🟢 Status
+This roadmap reflects the current real state of the project
+and will be updated after each completed stage.
