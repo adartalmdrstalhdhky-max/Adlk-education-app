@@ -1,44 +1,59 @@
-# Governance – أدلك (Adlk)
+# Governance — Adlk Project
 
-## 1. ملكية المشروع
-مشروع "أدلك" هو مشروع تعليمي مستقل
-مملوك ومُدار من قبل مؤسس المشروع.
+## 1. Project Ownership
 
-جميع القرارات النهائية المتعلقة بالرؤية،
-والاتجاه، والمحتوى، والتقنيات
-تعود إلى مؤسس المشروع.
+Adlk is an independent educational initiative
+founded and maintained by the project founder.
 
----
+All final decisions related to:
+- vision
+- direction
+- content
+- technical architecture
 
-## 2. إدارة المشروع
-يتم إدارة مشروع أدلك وفق مبدأ:
-- رؤية واحدة
-- قرار مركزي
-- تنفيذ مرحلي
-
-وقد يتم الاستعانة بمساهمين أو متعاونين
-في مراحل مختلفة حسب الحاجة.
+are made by the project founder.
 
 ---
 
-## 3. المساهمات
-المشروع حاليًا في مرحلة التأسيس.
+## 2. Project Management Model
 
-أي مساهمات مستقبلية (برمجية، تعليمية، تصميمية)
-ستكون وفق توجيه إدارة المشروع،
-ولا تعني ملكية أو شراكة تلقائية
-إلا باتفاق مكتوب وواضح.
+Adlik follows a centralized leadership model:
 
----
+- Single vision
+- Central decision-making
+- Phased execution
 
-## 4. القرارات التقنية
-يتم اتخاذ القرارات التقنية بناءً على:
-- مصلحة المشروع التعليمية
-- البساطة والاستدامة
-- ملاءمة البيئة المحلية (العمل بدون إنترنت)
+Contributors and collaborators may be involved
+at different stages as needed, without affecting ownership.
 
 ---
 
-## 5. التعديلات على هذا الملف
-يحق لإدارة المشروع تحديث هذا الملف
-في أي وقت بما يخدم مصلحة مشروع أدلك.
+## 3. Contributions & Collaboration
+
+The project is currently in its **foundational stage**.
+
+Any future contributions (technical, educational, or design-related):
+- do not imply ownership
+- do not imply partnership
+- do not grant decision-making authority
+
+unless explicitly agreed upon in written form.
+
+---
+
+## 4. Technical Decision Principles
+
+Technical decisions are made based on:
+
+- Educational value
+- Simplicity and long-term sustainability
+- Suitability for low-connectivity environments
+- Offline-first requirements
+
+---
+
+## 5. File Updates
+
+The project maintainer reserves the right
+to update this governance document at any time
+to serve the best interest of the Adlk project.
